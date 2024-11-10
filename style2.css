@@ -1,0 +1,103 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centering Container */
+  body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f4f6; /* Light background for contrast */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Calculator Container */
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Display Area */
+  .calculator-display {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 2px solid #444;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Button Container */
+  .calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color: #666;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  /* Operator Buttons */
+  .operator {
+    background-color: #ff9500;
+  }
+  
+  /* Equals Button */
+  .button:active {
+    background-color: #333;
+  }
+  
+  .button.operator:active {
+    background-color: #cc7a00;
+  }
+  
+  /* Hover effect */
+  .button:hover {
+    background-color: #777;
+  }
+  
+  .operator:hover {
+    background-color: #ffa726;
+  }
+  
+  /* Style for Equal Button */
+  .button:nth-last-child(2) {
+    grid-column: span 2;
+  }
+
+  /* Clear Button Styling */
+.button.clear {
+    background-color: #e74c3c; /* Red color for clear */
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Clear Button Hover */
+  .button.clear:hover {
+    background-color: #c0392b;
+  }
+  
+  
